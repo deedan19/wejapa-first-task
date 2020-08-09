@@ -1,0 +1,141 @@
+/* Try out these colors combination
+#a0d2eb -- something like very light blue
+#e5eaf5 -- something like white
+#d0bdf4 -- something like very light purple
+#845bb3 -- something like purple
+#494d5f -- something like black
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( #a0d2eb, #e5eaf5, #d0bdf4,#845bb3,#494d5f);
+    font-family: cursive;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background: #845bb3;
+   height: 20vh;
+   width: 100%;
+   color: #fff;
+   text-align: center;
+   border: 2px solid blue;
+   align-items: center;
+}
+
+#header .header{
+    color: whitesmoke;
+    /* width: 200px; */
+    margin: 10px auto;
+
+}
+
+#banner{
+    height: 60vh;
+    width: 100%;
+}
+
+.banner-image{
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    float: left;
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./img/IMG-36.png');
+    margin: 10px 0px 10px 50px;
+   width: 350px;
+}
+
+.intro{
+    float: right;
+    background: transparent;
+    color: grey;
+    width: 600px;
+    margin: 120px 170px 0px 0px;
+    text-align: center;
+}
+
+.intro p {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#personal{
+    clear: both;
+}
+
+#personal, #friends, #hobbies{
+    width: 100%;
+   
+    
+}
+
+.personal-heading h1, .friends-heading h1, .hobbies-heading h1{
+    text-transform: capitalize;
+    font-weight: 900;
+    color:#845bb3;
+    font-size: 2rem;
+    text-align: center;
+    /* padding: 1.5rem; */
+    border-bottom: 5px dotted #845bb3;
+    /* width: 220px; */
+    margin: 0px auto;
+}
+
+.personal-heading, .friends-heading, .hobbies-heading{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1rem dash whitesmoke;
+    /* border: 3px solid blue; */
+}
+
+.personal-images img, .friends-images img, .hobbies-images img{
+    display: inline-block;
+    border: 10px solid whitesmoke;
+    width: 24.51%;
+    margin-left: 1.5px;
+
+}
+
+/* .personal-images img{
+    border: 10px solid white;
+    justify-content: space-between;
+} */
+
+
+.footer{
+    background:#494d5f;
+    color: whitesmoke;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.5rem;
+    width: 100%;
+    border-top: 3px solid whitesmoke;
+    margin-top: 1.25rem;
+}
+
+
+
+/* img{
+    width: 400px;
+   
+} */
+
+/* section{
+    border: 2px solid orangered;
+} */
+
+@media screen and (max-width:576px){
+    body{
+        background: orchid;
+    }
+}
